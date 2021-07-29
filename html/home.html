@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Book My Show</title>
+  </head>
+
+
+  <body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand text-light" href="#">Book My Show</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-muted" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-muted" href="#">Action</a>
+          <a class="dropdown-item text-muted" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-muted" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled text-muted" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+    <form class="form-inline my-2 my-lg-0" action="http://localhost/js_curd_2/php/singOut.php">
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick="singOut();" >Sing Out</button>
+    </form>
+    
+  </div>
+</nav>
+<!-- <label class="btn btn-secondary" for="option4">4<input type="checkbox" class="btn-check" name="options" id="option4" autocomplete="off"></label> -->
+
+    <div class="form-group form-check">
+     
+<div class="p-3 mb-2 bg-secondary text-white">
+    <h1>movie ticket booking</h1>
+    </div>
+    <div class="p-3 mb-2 bg-secondary text-white">
+     <div class="container form-group">
+        <form id="homeForm" onsubmit="onSubminHome();"  action="http://localhost/js_curd_2/php/home.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+  
+        <div class="container">
+            <label>PLATINUM </label>
+        </div>
+        <div class="p-3 mb-2 bg-white text-dark ">
+            <label class="btn btn-primary" for="I">I</label><lr>
+            <label class="btn btn-secondary" for="sheetI1">1<input type="checkbox" class="btn-check" name="sheetI1" id="sheetI1" value="I1" autocomplete="off"></label><lr>
+            <label class="btn btn-secondary" for="sheetI2">2<input type="checkbox" class="btn-check" name="sheetI2" id="sheetI2" value="I2" autocomplete="off"></label><lr>
+                <label class="btn btn-secondary" for="sheetI3">3<input type="checkbox" class="btn-check" name="sheetI3" id="sheetI3" value="I3" autocomplete="off"></label><lr>
+                    <label class="btn btn-secondary" for="sheetI4">4<input type="checkbox" class="btn-check" name="sheetI4" id="sheetI4" value="I4" autocomplete="off"></label><lr>
+                        <label class="btn btn-secondary" for="sheetI5">5<input type="checkbox" class="btn-check" name="sheetI5" id="sheetI5" value="I5" autocomplete="off"></label><lr>
+                            <label class="btn btn-secondary" for="sheetI6">6<input type="checkbox" class="btn-check" name="sheetI6" id="sheetI6" value="I6" autocomplete="off"></label><lr>
+                                <label class="btn btn-secondary" for="sheetI7">7<input type="checkbox" class="btn-check" name="sheetI7" id="sheetI7" value="I7" autocomplete="off"></label><lr>
+                                    <label class="btn btn-secondary" for="sheetI8">8<input type="checkbox" class="btn-check" name="sheetI8" id="sheetI8" value="I8" autocomplete="off"></label><br>
+                                    <label class="btn btn-primary" for="H">H</label><lr></lr>
+                                    <label class="btn btn-secondary" for="sheetH1">1<input type="checkbox" class="btn-check" name="sheetH1" id="sheetH1" value="H1" autocomplete="off"></label><lr>
+                                        <label class="btn btn-secondary" for="sheetH2">2<input type="checkbox" class="btn-check" name="sheetH2" id="sheetH2" value="H2" autocomplete="off"></label><lr>
+                                            <label class="btn btn-secondary" for="sheetH3">3<input type="checkbox" class="btn-check" name="sheetH3" id="sheetH3" value="H3" autocomplete="off"></label><lr>
+                                                <label class="btn btn-secondary" for="sheetH4">4<input type="checkbox" class="btn-check" name="sheetH4" id="sheetH4" value="H4" autocomplete="off"></label><lr>
+                                                    <label class="btn btn-secondary" for="sheetH5">5<input type="checkbox" class="btn-check" name="sheetH5" id="sheetH5" value="H5" autocomplete="off"></label><lr>
+                                                        <label class="btn btn-secondary" for="sheetH6">6<input type="checkbox" class="btn-check" name="sheetH6" id="sheetH6" value="H6" autocomplete="off"></label><lr>
+                                                            <label class="btn btn-secondary" for="sheetH7">7<input type="checkbox" class="btn-check" name="sheetH7" id="sheetH7" value="H7" autocomplete="off"></label><lr>
+                                                                <label class="btn btn-secondary" for="sheetH8">8<input type="checkbox" class="btn-check" name="sheetH8" id="sheetH8" value="H8" autocomplete="off"></label>
+      
+        </div>
+        <div class="container">
+            <label>GOLD</label>
+        </div>
+        <div class="p-3 mb-2 bg-white text-dark">
+            <label class="btn btn-primary" for="G">G</label><lr></lr>
+            <label class="btn btn-secondary" for="sheetG1">1<input type="checkbox" class="btn-check" name="sheetG1" id="sheetG1" value="G1" autocomplete="off"></label><lr>
+            <label class="btn btn-secondary" for="sheetG2">2<input type="checkbox" class="btn-check" name="sheetG2" id="sheetG2" value="G2" autocomplete="off"></label><lr>
+                <label class="btn btn-secondary" for="sheetG3">3<input type="checkbox" class="btn-check" name="sheetG3" id="sheetG3" value="G3" autocomplete="off"></label><lr>
+                    <label class="btn btn-secondary" for="sheetG4">4<input type="checkbox" class="btn-check" name="sheetG4" id="sheetG4" value="G4" autocomplete="off"></label><lr>
+                        <label class="btn btn-secondary" for="sheetG5">5<input type="checkbox" class="btn-check" name="sheetG5" id="sheetG5" value="G5" autocomplete="off"></label><lr>
+                            <label class="btn btn-secondary" for="sheetG6">6<input type="checkbox" class="btn-check" name="sheetG6" id="sheetG6" value="G6" autocomplete="off"></label><lr>
+                                <label class="btn btn-secondary" for="sheetG7">7<input type="checkbox" class="btn-check" name="sheetG7" id="sheetG7" value="G7" autocomplete="off"></label><lr>
+                                    <label class="btn btn-secondary" for="sheetG8">8<input type="checkbox" class="btn-check" name="sheetG8" id="sheetG8" value="G8" autocomplete="off"></label><br>
+                                    <label class="btn btn-primary" for="F">F</label><lr></lr>
+                                    <label class="btn btn-secondary" for="sheetF1">1<input type="checkbox" class="btn-check" name="sheetF1" id="sheetF1" value="F1" autocomplete="off"></label><lr>
+                                        <label class="btn btn-secondary" for="sheetF2">2<input type="checkbox" class="btn-check" name="sheetF2" id="sheetF2" value="F2" autocomplete="off"></label><lr>
+                                            <label class="btn btn-secondary" for="sheetF3">3<input type="checkbox" class="btn-check" name="sheetF3" id="sheetF3" value="F3" autocomplete="off"></label><lr>
+                                                <label class="btn btn-secondary" for="sheetF4">4<input type="checkbox" class="btn-check" name="sheetF4" id="sheetF4" value="F4" autocomplete="off"></label><lr>
+                                                    <label class="btn btn-secondary" for="sheetF5">5<input type="checkbox" class="btn-check" name="sheetF5" id="sheetF5" value="F5" autocomplete="off"></label><lr>
+                                                        <label class="btn btn-secondary" for="sheetF6">6<input type="checkbox" class="btn-check" name="sheetF6" id="sheetF6" value="F6" autocomplete="off"></label><lr>
+                                                            <label class="btn btn-secondary" for="sheetF7">7<input type="checkbox" class="btn-check" name="sheetF7" id="sheetF7" value="F7" autocomplete="off"></label><lr>
+                                                                <label class="btn btn-secondary" for="sheetF8">8<input type="checkbox" class="btn-check" name="sheetF8" id="sheetF8" value="F8" autocomplete="off"></label><br>
+                                                                <label class="btn btn-primary" for="E">E</label><lr></lr>
+                                                                <label class="btn btn-secondary" for="sheetE1">1<input type="checkbox" class="btn-check" name="sheetE1" id="sheetE1" value="E1" autocomplete="off"></label><lr>
+                                                                    <label class="btn btn-secondary" for="sheetE2">2<input type="checkbox" class="btn-check" name="sheetE2" id="sheetE2" value="E2" autocomplete="off"></label><lr>
+                                                                        <label class="btn btn-secondary" for="sheetE3">3<input type="checkbox" class="btn-check" name="sheetE3" id="sheetE3" value="E3" autocomplete="off"></label><lr>
+                                                                            <label class="btn btn-secondary" for="sheetE4">4<input type="checkbox" class="btn-check" name="sheetE4" id="sheetE4" value="E4" autocomplete="off"></label><lr>
+                                                                                <label class="btn btn-secondary" for="sheetE5">5<input type="checkbox" class="btn-check" name="sheetE5" id="sheetE5" value="E5" autocomplete="off"></label><lr>
+                                                                                    <label class="btn btn-secondary" for="sheetE6">6<input type="checkbox" class="btn-check" name="sheetE6" id="sheetE6" value="E6" autocomplete="off"></label><lr>
+                                                                                        <label class="btn btn-secondary" for="sheetE7">7<input type="checkbox" class="btn-check" name="sheetE7" id="sheetE7" value="E7" autocomplete="off"></label><lr>
+                                                                                            <label class="btn btn-secondary" for="sheetE8">8<input type="checkbox" class="btn-check" name="sheetE8" id="sheetE8" value="E8" autocomplete="off"></label><br>
+                                                                                            <label class="btn btn-primary" for="D">D</label><lr></lr>
+                                                                                            <label class="btn btn-secondary" for="sheetD1">1<input type="checkbox" class="btn-check" name="sheetD1" id="sheetD1" value="D1" autocomplete="off"></label><lr>
+                                                                                                <label class="btn btn-secondary" for="sheetD2">2<input type="checkbox" class="btn-check" name="sheetD2" id="sheetD2" value="D2" autocomplete="off"></label><lr>
+                                                                                                    <label class="btn btn-secondary" for="sheetD3">3<input type="checkbox" class="btn-check" name="sheetD3" id="sheetD3" value="D3" autocomplete="off"></label><lr>
+                                                                                                        <label class="btn btn-secondary" for="sheetD4">4<input type="checkbox" class="btn-check" name="sheetD4" id="sheetD4" value="D4" autocomplete="off"></label><lr>
+                                                                                                            <label class="btn btn-secondary" for="sheetD5">5<input type="checkbox" class="btn-check" name="sheetD5" id="sheetD5" value="D5" autocomplete="off"></label><lr>
+                                                                                                                <label class="btn btn-secondary" for="sheetD6">6<input type="checkbox" class="btn-check" name="sheetD6" id="sheetD6" value="D6" autocomplete="off"></label><lr>
+                                                                                                                    <label class="btn btn-secondary" for="sheetD7">7<input type="checkbox" class="btn-check" name="sheetD7" id="sheetD7" value="D7" autocomplete="off"></label><lr>
+                                                                                                                        <label class="btn btn-secondary" for="sheetD8">8<input type="checkbox" class="btn-check" name="sheetD8" id="sheetD8" value="D8" autocomplete="off"></label>
+      
+        </div>
+
+        <div class="container">
+            <label>SILVER </label>
+        </div>
+        <div class="p-3 mb-2 bg-white text-dark">
+            <label class="btn btn-primary" for="C">C</label><lr>
+                <label class="btn btn-secondary" for="sheteC1">1<input type="checkbox" class="btn-check" name="sheteC1" id="sheetC1" value="C1" autocomplete="off"></label><lr>
+                <label class="btn btn-secondary" for="sheetC2">2<input type="checkbox" class="btn-check" name="sheetC2" id="sheetC2" value="C2" autocomplete="off"></label><lr>
+                    <label class="btn btn-secondary" for="sheetC3">3<input type="checkbox" class="btn-check" name="sheetC3" id="sheetC3" value="C3" autocomplete="off"></label><lr>
+                        <label class="btn btn-secondary" for="sheetC4">4<input type="checkbox" class="btn-check" name="sheetC4" id="sheetC4" value="C4" autocomplete="off"></label><lr>
+                            <label class="btn btn-secondary" for="sheetC5">5<input type="checkbox" class="btn-check" name="sheetC5" id="sheetC5" value="C5" autocomplete="off"></label><lr>
+                                <label class="btn btn-secondary" for="sheetC6">6<input type="checkbox" class="btn-check" name="sheetC6" id="sheetC6" value="C6" autocomplete="off"></label><lr>
+                                    <label class="btn btn-secondary" for="sheetC6">7<input type="checkbox" class="btn-check" name="sheetC6" id="sheetC7" value="C7" autocomplete="off"></label><lr>
+                                        <label class="btn btn-secondary" for="sheetC8">8<input type="checkbox" class="btn-check" name="sheetC8" id="sheetC8" value="C8" autocomplete="off"></label><br>
+                                        <label class="btn btn-primary" for="B">B</label><lr>
+                                        <label class="btn btn-secondary" for="sheetB1">1<input type="checkbox" class="btn-check" name="sheetB1" id="sheetB1" value="C1" autocomplete="off"></label><lr>
+                                            <label class="btn btn-secondary" for="sheetB2">2<input type="checkbox" class="btn-check" name="sheetB2" id="sheetB2" value="C2" autocomplete="off"></label><lr>
+                                                <label class="btn btn-secondary" for="sheetB3">3<input type="checkbox" class="btn-check" name="sheetB3" id="sheetB3" value="C3" autocomplete="off"></label><lr>
+                                                    <label class="btn btn-secondary" for="sheetB4">4<input type="checkbox" class="btn-check" name="sheetB4" id="sheetB4" value="C4" autocomplete="off"></label><lr>
+                                                        <label class="btn btn-secondary" for="sheetB5">5<input type="checkbox" class="btn-check" name="sheetB5" id="sheetB5" value="C5" autocomplete="off"></label><lr>
+                                                            <label class="btn btn-secondary" for="sheetB6">6<input type="checkbox" class="btn-check" name="sheetB6" id="sheetB6" value="C6" autocomplete="off"></label><lr>
+                                                                <label class="btn btn-secondary" for="sheetB7">7<input type="checkbox" class="btn-check" name="sheetB7" id="sheetB7" value="C7" autocomplete="off"></label><lr>
+                                                                    <label class="btn btn-secondary" for="sheetB8">8<input type="checkbox" class="btn-check" name="sheetB8" id="sheetB8" value="C8" autocomplete="off"></label><br>
+                                                                    <label class="btn btn-primary" for="A">A</label><lr>
+                                                                    <label class="btn btn-secondary" for="sheetA1">1<input type="checkbox" class="btn-check" name="sheetA1" id="sheetA1" value="A1" autocomplete="off"></label><lr>
+                                                                        <label class="btn btn-secondary" for="sheetA2">2<input type="checkbox" class="btn-check" name="sheetA2" id="sheetA2" value="A2" autocomplete="off"></label><lr>
+                                                                            <label class="btn btn-secondary" for="sheetA3">3<input type="checkbox" class="btn-check" name="sheetA3" id="sheetA3" value="A3" autocomplete="off"></label><lr>
+                                                                                <label class="btn btn-secondary" for="sheetA4">4<input type="checkbox" class="btn-check" name="sheetA4" id="sheetA4" value="A4" autocomplete="off"></label><lr>
+                                                                                    <label class="btn btn-secondary" for="sheetA5">5<input type="checkbox" class="btn-check" name="sheetA5" id="sheetA5" value="A5" autocomplete="off"></label><lr>
+                                                                                        <label class="btn btn-secondary" for="sheetA6">6<input type="checkbox" class="btn-check" name="sheetA6" id="sheetA6" value="A6" autocomplete="off"></label><lr>
+                                                                                            <label class="btn btn-secondary" for="sheetA7">7<input type="checkbox" class="btn-check" name="sheetA7" id="sheetA7" value="A7" autocomplete="off"></label><lr>
+                                                                                                <label class="btn btn-secondary" for="sheetA8">8<input type="checkbox" class="btn-check" name="sheetA8" id="sheetA8" value="A8" autocomplete="off"></label>
+      
+        </div>
+        <div>
+            <input type="button" onclick="onSubminHome();" class="btn btn-primary input-group-text" name="submit" id="submit" value="submit" autocomplete="off">
+        </div>
+    </form>
+    </div>
+    </div>
+
+ 
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="http://localhost/js_curd_2/js/home.js "></script>
+    
+  </body>
+</html>
